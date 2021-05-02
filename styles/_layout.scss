@@ -1,0 +1,43 @@
+@media (max-width: 1000px) {
+  // header section
+  .nav-link,
+  .navbar-brand {
+    margin: 0px !important;
+  }
+  .navbar-nav > button {
+    width: 100%;
+    text-align: start !important;
+    margin: 7px 0px !important;
+  }
+
+  //   footer section
+  #footer-elements {
+    .col-2 {
+      width: 30%;
+    }
+    .col-4 {
+      width: 60%;
+    }
+    .col-3 {
+      width: 33%;
+      margin-top: 2rem;
+      &:nth-child(odd) {
+        margin-left: 12.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  // footer section
+  #footer-elements {
+    display: contents;
+    .col-2,
+    .col-3,
+    .col-4 {
+      width: 100%;
+      padding: 1rem 1rem !important;
+      margin: 0px !important;
+    }
+  }
+}
