@@ -8,6 +8,9 @@
     text-align: start !important;
     margin: 7px 0px !important;
   }
+  #footer-elements a {
+    font-size: 19px;
+  }
   #footer-elements .col-2 {
     width: 30%;
   }
@@ -36,6 +39,19 @@
   }
 }
 
+@media (max-width: 700px) and (min-width: 500px) {
+  #footer-elements .col-3:nth-child(odd) {
+    margin-left: 9rem !important;
+    padding-right: 0px !important;
+  }
+  .col-3:nth-child(even) {
+    padding: 0px !important;
+  }
+  .col-3:nth-child(even) p, .col-3:nth-child(even) .services {
+    font-size: 19px !important;
+  }
+}
+
 @media (max-width: 1000px) and (min-width: 480px) {
   #howToStart .card {
     width: 13rem !important;
@@ -53,6 +69,39 @@
   }
   #questionaire {
     width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .auth-container {
+    width: 100% !important;
+  }
+  .displaCoach {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    margin: 0% !important;
+  }
+  .displaCoach .col-6 {
+    width: 100vh !important;
+    margin-bottom: 3rem;
+  }
+  .quick-search select {
+    width: 50% !important;
+  }
+  .pagination {
+    margin-top: 0rem !important;
+  }
+}
+
+@media (max-width: 540px) {
+  .auth-form {
+    width: 95% !important;
+  }
+  .displaCoach .col-6 .row {
+    padding-left: 0.5rem !important;
+    padding-right: 0rem !important;
   }
 }
 
@@ -94,17 +143,21 @@
   #questionaire {
     width: 100% !important;
   }
-}
-
-@media (max-width: 768px) {
-  .auth-container {
-    width: 100% !important;
+  .displaCoach .row1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
-}
-
-@media (max-width: 540px) {
-  .auth-form {
-    width: 95% !important;
+  .displaCoach .row1 .col-7 {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .quick-search select {
+    width: 75% !important;
   }
 }
 
@@ -122,7 +175,8 @@
   border: none;
 }
 
-.border-success {
+.border-success,
+.text-success {
   border-color: #69b26f !important;
 }
 
@@ -147,5 +201,21 @@ p, .services {
 .form-check-label {
   font-weight: 200;
   font-size: 17px;
+}
+
+#findCoachHero::before {
+  content: "";
+  background: url("../assets/plant-bg.jpg") no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 565px;
+  z-index: -1;
+  opacity: 0.85;
+}
+
+.img-clip-circle {
+  width: 145px;
+  -webkit-clip-path: circle(48% at 50% 50%);
+          clip-path: circle(48% at 50% 50%);
 }
 /*# sourceMappingURL=style.css.map */

@@ -21,6 +21,40 @@
   }
 }
 
+@media (max-width: 768px) {
+  // login & registration page
+  .auth-container {
+    width: 100% !important;
+  }
+  // display coaches
+  .displaCoach {
+    flex-direction: column !important;
+    margin: 0% !important;
+    .col-6 {
+      width: 100vh !important;
+      margin-bottom: 3rem;
+    }
+  }
+  .quick-search select {
+    width: 50% !important;
+  }
+  .pagination {
+    margin-top: 0rem !important;
+  }
+}
+
+@media (max-width: 540px) {
+  // login & registration page
+  .auth-form {
+    width: 95% !important;
+  }
+  // display coaches
+  .displaCoach .col-6 .row {
+    padding-left: 0.5rem !important;
+    padding-right: 0rem !important;
+  }
+}
+
 @media (max-width: 480px) {
   #hero,
   #whyus {
@@ -56,16 +90,16 @@
   #questionaire {
     width: 100% !important;
   }
-}
-
-// login & registration page
-@media (max-width: 768px) {
-  .auth-container {
-    width: 100% !important;
+  // display coaches
+  .displaCoach .row1 {
+    display: flex;
+    flex-direction: column-reverse;
+    .col-7 {
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
   }
-}
-@media (max-width: 540px) {
-  .auth-form {
-    width: 95% !important;
+  .quick-search select {
+    width: 75% !important;
   }
 }
